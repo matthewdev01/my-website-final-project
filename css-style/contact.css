@@ -1,0 +1,54 @@
+:root {
+  --text-color: #1a1c20;
+  --link-color: #4a76ee;
+  --background-color: #eeeff1;
+}
+
+.contact-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.contact-section h2 {
+  font-size: 35px;
+}
+
+.contact-section .group {
+  display: flex;
+  gap: 50px;
+}
+
+.contact-section .text {
+  flex: 3;
+  margin-top: 20px;
+}
+
+.contact-section form {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea {
+  border: 2px solid var(--link-color);
+  background-color: transparent;
+  padding: 10px;
+  margin-bottom: 15px;
+  outline: none;
+  resize: none;
+}
+
+.contact-section .group form button {
+  font-size: 16px;
+  color: #fff;
+  background-color: var(--link-color);
+  border: none;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.1;
+}
+
+.contact-section .group form button:hover {
+  filter: brightness(0.9);
+}

@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css-style/style.css" />
     <link rel="stylesheet" href="css-style/nav-bar.css" />
+    <link rel="stylesheet" href="css-style/hero.css" />
+    <link rel="stylesheet" href="css-style/skills.css" />
+    <link rel="stylesheet" href="css-style/about.css" />
+    <link rel="stylesheet" href="css-style/contact.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -36,18 +41,110 @@
         </a>
       </div>
     </nav>
+
     <main>
       <!-- Section 1: Hero -->
-      <section></section>
+      <section class="hero-section">
+        <div class="text">
+          <h2>Hi, I'm Matt</h2>
+          This portfolio is a way for me to share my journey as a learner. Here,
+          you’ll see some of the projects I’ve worked on, the skills I’ve
+          practiced, and the progress I’m making as I grow in the field of
+          technology. My goal is to continue developing my knowledge, apply what
+          I’ve learned in real situations, and keep moving forward until I
+          become a professional who can create useful and creative solutions
+          with technology.
+
+          <div class="links">
+            <a href="#skills">
+              <i class="fa-solid fa-code"></i>
+              <span>Skills</span>
+            </a>
+
+            <a href="#about">
+              <i class="fa-solid fa-address-card"></i>
+              <span>About</span>
+            </a>
+
+            <a href="#contact">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Contact</span>
+            </a>
+          </div>
+        </div>
+        <div class="headshot">
+          <img src="Assets/imgs/headshot.jpg" alt="Matt's Headshot" />
+        </div>
+      </section>
 
       <!-- Section 2: Skills -->
-      <section id="skills"></section>
+      <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="text">Programming Languages I Learned</div>
+        <div class="cells">
+          <div class="cell">
+            <img src="Assets/imgs/html-logo.webp" alt="HTML logo" />
+            <span>HTML</span>
+          </div>
 
-      <!-- Section 3: Testimony -->
-      <section id="testimony"></section>
+          <div class="cell">
+            <img src="Assets/imgs/css-logo.webp" alt="CSS logo" />
+            <span>CSS</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: About -->
+      <section id="about" class="about-section">
+        <h2>About</h2>
+
+        <div class="group">
+          <div class="person-details">
+            <img src="Assets/imgs/about-headshot2.jpg" />
+            <p>Matthew</p>
+            <p>Future IT-Profesional??</p>
+          </div>
+
+          <div class="text">
+            Hi, I’m Matthew P. Jacobe, a 17-year-old senior high school student
+            in Grade 11 Techpro Malachite. I’m an aspiring IT professional who
+            enjoys learning about technology, programming, and web development.
+            I also love going outside to spend time with friends, I'm also
+            playing basketball, although I'm not that good at it and playing
+            online games during my free time. Right now, I’m focused on building
+            my skills through school projects and personal practice as I prepare
+            for my future in the IT field. This portfolio shows some of the
+            things I’ve worked on, the skills I’m developing, and my journey as
+            a student who is passionate about technology and continuous
+            learning.
+          </div>
+        </div>
+      </section>
 
       <!-- Section 4: Contact -->
-      <section id="contact"></section>
+      <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+        <div class="group">
+          <div class="text">
+            If you need help, have questions, or would like to work with me,
+            feel free to reach out through this contact form. You can send me a
+            message anytime, whether it’s about a project, collaboration, or
+            just to connect. I’ll do my best to reply as soon as possible.
+          </div>
+          <form action="">
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+
+            <label for="message">Message</label>
+            <textarea id="message" cols="30" rows="10"></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
     </main>
   </body>
 </html>

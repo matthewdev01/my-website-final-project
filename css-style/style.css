@@ -16,6 +16,8 @@ html {
 
 body {
   background-attachment: var(--background-color);
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 a {
@@ -23,29 +25,75 @@ a {
   text-decoration: none;
 }
 
-/* Navbar */
-/* nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 50px;
-  height: 80px;
+@media (max-width: 600px) {
+  /* Navbar */
+  nav {
+    padding: 0 20px;
+  }
+
+  nav .right {
+    font-size: 22px;
+  }
+
+  nav .right a:last-child {
+    color: var(--text-color);
+    background-color: transparent;
+    padding: 0;
+  }
+
+  nav .right a span {
+    display: none;
+  }
+
+  /* Section 1: Hero */
+  .hero-section {
+    padding: 0 20px;
+  }
+
+  .hero-section .text {
+    font-style: 20px;
+  }
+  /* Section 2: Skills */
+  .skills-section {
+    padding: 0 20px;
+  }
+
+  .skills-section .cells .cell span {
+    font-style: 15px;
+  }
+
+  /* Section 4: Contact */
+  .contact-section .group {
+    flex-direction: column;
+  }
 }
 
-nav .left a {
-  color: var(--text-color);
-  font-style: 22px;
-  font-weight: 600;
+/* Section 1: Hero */
+@media (max-width: 850px) {
+  .hero-section h2 {
+    font-style: 35px;
+  }
 }
 
-nav .right a {
-  color: var(--text-color);
-  margin: 0 10px;
+@media (max-width: 740px) {
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+
+  .hero-section .headshot img {
+    width: 175px;
+  }
+
+  .about-section {
+    text-align: center;
+  }
+
+  .about-section .group {
+    flex-direction: column;
+  }
 }
 
-nav .right a:last-child {
-  color: var(--background-color);
-  background-color: var(--text-color);
-  padding: 5px 15px;
-  border-radius: 5px;
-} */
+/* Section 4: Contact */
+.contact-section {
+  padding: 0 20px;
+}

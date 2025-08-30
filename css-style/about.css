@@ -1,0 +1,45 @@
+:root {
+  --text-color: #1a1c20;
+  --link-color: #4a76ee;
+  --background-color: #eeeff1;
+}
+
+.about-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.about-section h2 {
+  font-size: 35px;
+  margin: 30px;
+}
+
+.about-section .group {
+  display: flex;
+  align-self: center;
+  gap: 50px;
+}
+
+.about-section .group .person-details {
+  text-align: center;
+  flex: 2;
+}
+
+.about-section .group .person-details img {
+  width: 145px;
+  border-radius: 45%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.about-section .group .person-details p {
+  font-weight: 600;
+}
+
+.about-section .group .person-details a:last-child {
+  font-weight: normal;
+}
+
+.about-section .group .text {
+  flex: 8;
+}
