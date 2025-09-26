@@ -2,11 +2,21 @@
   --text-color: #1a1c20;
   --link-color: #4a76ee;
   --background-color: #eeeff1;
+  --card-color: #fff;
+}
+
+/* Dark Mode Theme */
+:root.dark {
+  --text-color: #f0f0f0;
+  --link-color: #79a6ff;
+  --background-color: #121212;
+  --card-color: #1e1e1e;
 }
 
 .skills-section {
-  padding: 0 50px;
-  margin-bottom: 100px;
+  min-height: 100vh;
+  padding: 415px 50px;
+  text-align: center;
 }
 
 .skills-section h2 {

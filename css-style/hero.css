@@ -2,15 +2,24 @@
   --text-color: #1a1c20;
   --link-color: #4a76ee;
   --background-color: #eeeff1;
+  --card-color: #fff;
+}
+
+/* Dark Mode Theme */
+:root.dark {
+  --text-color: #f0f0f0;
+  --link-color: #79a6ff;
+  --background-color: #121212;
+  --card-color: #1e1e1e;
 }
 
 .hero-section {
+  height: 100vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
   margin: 100px 0;
-  margin-bottom: 100px;
   gap: 40px;
 }
 

@@ -2,6 +2,15 @@
   --text-color: #1a1c20;
   --link-color: #4a76ee;
   --background-color: #eeeff1;
+  --card-color: #fff;
+}
+
+/* Dark Mode Theme */
+:root.dark {
+  --text-color: #f0f0f0;
+  --link-color: #79a6ff;
+  --background-color: #121212;
+  --card-color: #1e1e1e;
 }
 
 * {
@@ -15,15 +24,19 @@ html {
 }
 
 body {
-  background-attachment: var(--background-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
   max-width: 1300px;
   margin: 0 auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a {
   color: var(--link-color);
   text-decoration: none;
 }
+
+/* Media Query */
 
 @media (max-width: 600px) {
   /* Navbar */

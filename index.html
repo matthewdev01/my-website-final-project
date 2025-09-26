@@ -23,9 +23,12 @@
     <!-- Navbar -->
     <nav>
       <div class="left">
-        <a href="/">Matthew P. Jacobe</a>
+        <a href="#">Matthew P. Jacobe</a>
       </div>
       <div class="right">
+        <button id="dark-mode-toggle" aria-label="Toggle dark mode">
+         <i class="fa-solid fa-moon"></i>
+        </button>
         <a
           href="https://github.com/matthewdev01"
           target="_blank"
@@ -106,7 +109,7 @@
           </div>
 
           <div class="text">
-            Hi, I’m Matthew P. Jacobe, a 17-year-old senior high school student
+            Hi, I’m Matthew P. Jacobe, a 16-year-old senior high school student
             in Grade 11 Techpro Malachite. I’m an aspiring IT professional who
             enjoys learning about technology, programming, and web development.
             I also love going outside to spend time with friends, I'm also
@@ -147,4 +150,20 @@
       </section>
     </main>
   </body>
+    <!-- Javascript -->
+   <script>
+  const toggle = document.getElementById('dark-mode-toggle');
+  const root = document.documentElement;
+
+  // Check saved theme
+  if (localStorage.getItem('theme') === 'dark') {
+    root.classList.add('dark');
+  }
+
+  toggle.addEventListener('click', () => {
+    root.classList.toggle('dark');
+    const newTheme = root.classList.contains('dark') ? 'dark' : 'light';
+    localStorage.setItem('theme', newTheme);
+  });
+</script>
 </html>
